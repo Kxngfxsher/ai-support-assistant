@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ассистент поддержки · демо</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <h1>Ассистент поддержки</h1>
+        <p class="brand-sub">Демо · вымышленный магазин «<span id="company">…</span>»</p>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <span class="engine" id="engine">…</span>
+      <span class="engine" id="kb-size">…</span>
+    </div>
+  </header>
+
+  <div class="banner" id="banner" hidden></div>
+
+  <main class="layout">
+    <section class="pane client" aria-label="Чат клиента">
+      <div class="pane-title"><b>Глазами клиента</b><span id="chat-caption">чат на сайте</span></div>
+      <div class="chat">
+        <header class="chat-head">
+          <span class="avatar" aria-hidden="true"></span>
+          <div class="chat-who"><b id="chat-name">…</b><small>виртуальный помощник · отвечает сразу</small></div>
+          <button class="btn small" id="btn-new" type="button">Новый диалог</button>
+        </header>
+        <div class="chat-body" id="chat" aria-live="polite"></div>
+        <div class="quick" id="quick"></div>
+        <form class="chat-input" id="chat-form">
+          <input id="chat-text" maxlength="2000" autocomplete="off" placeholder="Напишите вопрос…" aria-label="Сообщение">
+          <button class="btn primary" type="submit" id="chat-send">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="pane owner" aria-label="Панель владельца">
+      <div class="pane-title"><b>Глазами владельца</b><span>что происходит в поддержке</span></div>
+      <nav class="tabs" id="tabs"></nav>
+      <div class="tab-body" id="tab-body"></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>Магазин, заказы и диалоги в демо вымышлены.</span>
+    <span class="foot-links">
+      <button class="link" id="btn-reset" type="button">Сбросить демо-данные</button>
+      <a class="link" href="/api/docs" target="_blank" rel="noopener">Документация API</a>
+    </span>
+  </footer>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

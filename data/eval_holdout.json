@@ -1,0 +1,20 @@
+[
+  {"id": "hold-01", "question": "скока ждать диван если я из Новосибирска", "expected": {"action": "answer", "sources": ["dostavka/sroki"]}},
+  {"id": "hold-02", "question": "привезёте в субботу вечером?", "expected": {"action": "answer", "sources": ["dostavka/interval"]}},
+  {"id": "hold-03", "question": "а если мне не понравится цвет, смогу поменять?", "expected": {"action": "answer", "sources": ["vozvrat/obmen"]}},
+  {"id": "hold-04", "question": "списали деньги два раза а заказ висит неоплаченным", "expected": {"action": "answer", "sources": ["oplata/oshibka-oplaty"]}},
+  {"id": "hold-05", "question": "кресло развалилось через месяц", "expected": {"action": "answer", "sources": ["garantiya/brak", "garantiya/srok"]}},
+  {"id": "hold-06", "question": "хочу отказаться от покупки, уже оплатил", "expected": {"action": "answer", "sources": ["zakaz/otmena"]}},
+  {"id": "hold-07", "question": "можно ли вернуть шкаф, сделанный по моим размерам", "expected": {"action": "answer", "sources": ["vozvrat/isklyucheniya"]}},
+  {"id": "hold-08", "question": "документы для бухгалтерии дадите?", "expected": {"action": "answer", "sources": ["oplata/yurlica"]}},
+  {"id": "hold-09", "question": "сам соберу, гарантия не слетит?", "expected": {"action": "answer", "sources": ["sborka/samostoyatelno"]}},
+  {"id": "hold-10", "question": "когда бонусы упадут на счёт", "expected": {"action": "answer", "sources": ["bonusy/programma"]}},
+  {"id": "hold-11", "question": "есть ли доставка в Минск", "expected": {"action": "answer", "sources": ["dostavka/regiony"]}},
+  {"id": "hold-12", "question": "ваш курьер нахамил, буду писать в роспотребнадзор", "expected": {"action": "escalate"}},
+  {"id": "hold-13", "question": "сделаете скидку если возьму три дивана?", "expected": {"action": "escalate"}},
+  {"id": "hold-14", "question": "мне нужен живой человек", "expected": {"action": "escalate"}},
+  {"id": "hold-15", "question": "заказ 10485 когда приедет", "expected": {"action": "answer", "order": "10485"}},
+  {"id": "hold-16", "question": "посоветуйте матрас для больной спины", "expected": {"action": "escalate"}},
+  {"id": "hold-17", "question": "спасибо, всё понятно", "expected": {"action": "smalltalk"}},
+  {"id": "hold-18", "question": "за сколько дней до доставки можно перенести дату?", "expected": {"action": "answer", "sources": ["zakaz/izmenenie"]}}
+]

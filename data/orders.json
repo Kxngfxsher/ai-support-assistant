@@ -1,0 +1,10 @@
+[
+  {"number": "10480", "status": "delivered", "days": -3, "items": "Стеллаж «Лофт», 5 полок", "total": 8900},
+  {"number": "10481", "status": "pickup_ready", "days": 5, "items": "Светильник настольный «Нордик»", "total": 3490},
+  {"number": "10482", "status": "shipping", "days": 1, "items": "Диван-кровать «Осло», серый", "total": 54900},
+  {"number": "10483", "status": "assembling", "days": 3, "items": "Комод «Прованс», 4 ящика", "total": 18700},
+  {"number": "10484", "status": "awaiting_payment", "days": 2, "items": "Кресло «Бергамо»", "total": 21900},
+  {"number": "10485", "status": "production", "days": 12, "items": "Шкаф-купе по индивидуальным размерам", "total": 86000},
+  {"number": "10486", "status": "cancelled", "days": -1, "items": "Плед шерстяной, 2 шт.", "total": 5600},
+  {"number": "10487", "status": "shipping", "days": 0, "items": "Матрас «Комфорт» 160×200", "total": 32500}
+]
